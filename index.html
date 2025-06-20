@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="scroll-smooth">
+    <div class="container">
+      <header>
+        <nav id="home">
+          <div class="nav-bar">
+            <div class="nav-name">Azeez</div>
+            <div class="nav-links desktop">
+              <a href="#">Home</a>
+              <a href="#selected">Works</a>
+              <a href="#about">About</a>
+              <button class="btn resume-btn">
+                Download Resume
+                <img src="./icons/download_icon.svg" alt="download icon" />
+              </button>
+              <button class="btn toggle-btn" id="light-toggle">
+                <img src="./icons/light.svg" alt="toggle theme" />
+              </button>
+            </div>
+            <div class="mobile-controls">
+              <button id="mobile-light-toggle">
+                <img src="./icons/light.svg" alt="toggle theme" />
+              </button>
+              <button id="mobile-toggle">
+                <img src="./icons/hamburger.svg" alt="open menu" />
+              </button>
+            </div>
+            <div id="mobile-menu" class="mobile-menu">
+              <button id="close-menu">
+                <img src="./icons/cancel.svg" alt="close menu" />
+              </button>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#selected">Works</a></li>
+                <li><a href="#about">About</a></li>
+              </ul>
+              <button class="btn resume-btn">
+                Download Resume
+                <img src="./icons/download_icon.svg" alt="download icon" />
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="hero">
+          <p class="intro">Hey! 👋</p>
+          <h1 class="name">I am Ayobami Azeez</h1>
+          <p class="subtitle">
+            Passionate about developing solutions with clean code
+          </p>
+          <div class="hero-actions">
+            <div class="work-hire">
+              <div class="open-for-work">
+                <img src="./icons/workactive.svg" alt="active icon" />
+                <p>Open for Work</p>
+              </div>
+              <button class="btn hire-btn">Hire Me</button>
+            </div>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com"
+                ><img src="./icons/linkedin.svg" alt="LinkedIn"
+              /></a>
+              <a href="https://www.x.com"
+                ><img src="./icons/XLogo.svg" alt="X"
+              /></a>
+              <a href="https://www.instagram.com"
+                ><img src="./icons/instagram.svg" alt="Instagram"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="selected">
+          <h2>Selected Work</h2>
+          <div class="projects">
+            <div class="project">
+              <img src="./img/Ai-Project.png" alt="AI Project" />
+              <h3>Form Validation</h3>
+              <p>
+                This project focuses on validating forms on a website to avoid
+                errors.
+              </p>
+              <button class="btn view-btn">
+                View Project
+                <img src="./icons/ArrowRight.svg" alt="arrow right" />
+              </button>
+            </div>
+            <div class="project">
+              <img src="./img/Banner.png" alt="Project Banner" />
+              <h3>Todo-List Website for Smart Students</h3>
+              <p>
+                This project focuses on building a to‑do list tailored for smart
+                students.
+              </p>
+              <button class="btn view-btn">
+                View Project
+                <img src="./icons/ArrowRight.svg" alt="arrow right" />
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section id="about">
+          <div class="about-section">
+            <div class="about-text">
+              <h2>About Me</h2>
+              <p>
+                I’m Azeez Ayobami: a web/industrial developer, programmer,
+                artist, and photographer. I currently lead development at
+                Blacktail, working across founders and SaaS teams.
+              </p>
+              <p>
+                I’m passionate about creativity and enjoy exploring new tools
+                and fields in development.
+              </p>
+            </div>
+            <div class="about-image">
+              <img src="./img/IMG_0767.png" alt="Profile Photo" />
+            </div>
+          </div>
+        </section>
+
+        <section id="testimonial">
+          <h2>Testimonials</h2>
+          <div class="testimonials">
+            <blockquote>
+              <p>
+                Azeez’s service was absolutely amazing! He guided us every step
+                of the way and was open to changes. We look forward to working
+                with him again!
+              </p>
+              <footer>
+                <h3>Bob Jones</h3>
+                <p>Client</p>
+              </footer>
+            </blockquote>
+            <blockquote>
+              <p>
+                Azeez’s service was absolutely amazing! He guided us every step
+                of the way and was open to changes. We look forward to working
+                with him again!
+              </p>
+              <footer>
+                <h3>Bob Jones</h3>
+                <p>Client</p>
+              </footer>
+            </blockquote>
+          </div>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>You can reach out via the form below or through social media.</p>
+          <form onsubmit="submitButton(); return false;">
+            <input type="text" placeholder="Name" class="input-field" />
+            <input type="email" placeholder="Email" class="input-field" />
+            <textarea
+              placeholder="Message"
+              class="input-field message-field"
+            ></textarea>
+            <button type="submit" class="btn submit-btn">
+              Send Message
+              <img src="./icons/PaperPlaneTilt.svg" alt="send icon" />
+            </button>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-content">
+          <div class="footer-info">
+            <h1>Ayobami Azeez</h1>
+            <p>Development, Branding, Creative Direction</p>
+          </div>
+          <div class="footer-links-socials">
+            <div class="links">
+              <h2>Links</h2>
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#selected">Selected Work</a>
+              <a href="#testimonial">Testimonials</a>
+              <a href="#contact">Contact</a>
+            </div>
+            <div class="socials">
+              <h2>Socials</h2>
+              <a href="https://linkedin.com">LinkedIn</a>
+              <a href="https://x.com/i_aeem">X (Twitter)</a>
+              <a href="https://threads.net">Threads</a>
+              <a href="https://behance.net">Behance</a>
+              <a href="https://instagram.com">Instagram</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-brand">
+          <p>AZEEZ</p>
+        </div>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
